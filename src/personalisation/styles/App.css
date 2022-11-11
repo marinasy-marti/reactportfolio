@@ -4,6 +4,7 @@
   --primary-app-color: #0084ff;
   --secondary-app-color: #8ac6ff;
   --nav-color:white;
+  --name-color:#ffefaa;
 }
 
 *{
@@ -11,13 +12,15 @@
   margin: 0; 
 }
 
-
 .herosection{
   background: linear-gradient(
     90deg, 
     var(--primary-app-color),
     var(--secondary-app-color));
     clip-path: polygon(100% 0, 100% 71%, 50% 100%, 0 71%, 0 0);
+}
+.herosection nav{
+  width: 85%;
 }
 
 .nav-items{
@@ -36,4 +39,80 @@
 
 .px-10{
   padding-inline:100px;
+}
+
+.second-herosection{
+  padding: 70px;
+}
+
+.about-me-section{
+  padding:50px;
+  text-align: center;
+}
+.about-me-text{
+  color: white; 
+  font-family: "Ubuntu";
+  font-size: 1.4rem; 
+  font-weight: 700;
+}
+
+.about-me-name{
+  color: var(--name-color); 
+  font-size: 1.6rem;
+}
+
+.about-me-devfs , .about-me-sub{
+  color:white;
+  font-family: "Open Sans";
+}
+.about-me-devfs{
+  font-size: 1.43rem;
+}
+.about-me-name{
+  font-size: 1.4rem;
+}
+
+.get-resume{
+  width: 130px;
+  color:var(--name-color);
+  background: transparent;
+  font-family: "Ubuntu";
+  font-size: 1.2rem; 
+  outline: none;
+  border:0.5px solid white;
+  border-radius: 20px;
+  padding: 5px 10px;
+  margin-inline:0px; 
+  transition: all 0.3s ease-in;
+  animation: get-resume-animation 1s ease-in infinite;
+}
+
+.get-resume:hover{
+  color: white;
+  border: none;
+  font-weight: 800;
+  background: var(--name-color);
+  transform:translateY(-3px)
+}
+
+@keyframes get-resume-animation {
+  0%{
+    transform: scale(1);
+  }  
+  50%{
+    transform: scale(1.03);
+  }
+  100%{
+    transform: scale(1);
+  }
+}
+
+.my-img{
+  border-radius: 50%;
+  object-fit: contain;
+  width: 300px;
+  height: 300px;
+  padding-inline:0;
+  padding-bottom: 2px;
+  border: 1px solid white;
 }

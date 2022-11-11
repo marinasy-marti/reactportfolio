@@ -1,6 +1,8 @@
 
 import '../styles/App.css';
 import bitmoji from '../assets/bitmojime.jpg'
+/*Component*/
+import Aboutme  from '../components/Aboutme.jsx';
 
 function App() {
   return (
@@ -16,9 +18,9 @@ function App() {
             <span className='mx-4 nav-items'>Contact me</span>        
           </div>
         </nav>
-        <div className='second-herosection row justify-contente-center'>
-            <div className='col-lg-5 col-md-6 col-sm-12'>
-               <div className='d-flex flex-column justify-content-center about-me-text'>
+        <div className='second-herosection row justify-content-center'>
+            <div className='col-lg-5 col-md-6 col-sm-12 a'>
+               <div className='d-flex flex-column justify-content-center about-me-section'>
                 <span className='about-me-text'>
                     Hello, I'm <span className='about-me-name'>Marinasy Behamby</span> 
                 </span>
@@ -33,11 +35,16 @@ function App() {
                 </div>
                </div>
             </div> 
-            <div className='col-lg-6 col-md-6 col-sm-12 my-img'>
-                  <img className='img-fuild' alt='heorimage' src={bitmoji}/>
+            <div className='col-lg-6 col-md-6 col-sm-12 animate d-flex justify-content-center'>
+                  <img className='img-fuild my-img' alt='heorimage' src={bitmoji}/>
             </div>
         </div>
       </header>
+    <main>
+      <section>
+          <Aboutme />
+      </section>
+    </main>
     </div>
   );
 }
