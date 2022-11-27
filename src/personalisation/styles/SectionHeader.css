@@ -1,1 +1,12 @@
 @import url(./App.css);
+
+h2{
+    font-family: "Ubuntu";
+    font-weight:200;
+    font-size: 3.5rem;
+    text-decoration: underline;
+    text-decoration-thickness: 3px;
+    letter-spacing: 2px;
+    text-align: center;
+}
+

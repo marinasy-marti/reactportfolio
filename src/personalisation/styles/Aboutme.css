@@ -1,0 +1,48 @@
+.about-me-section .why{
+     font-size: 1rem; 
+     font-weight: 300;
+     font-family: "Ubuntu";
+     opacity: 0.8;
+     text-transform: capitalize;
+     text-align: center;
+}
+
+.about-me-inside{
+     width: 70%;
+     margin-inline:auto;
+  
+}
+
+.text-about-me-container .pa {
+     font-size: 1.4rem;
+}
+.highlights{
+     font-family: "Ubuntu";
+     padding-block: 10px;
+     margin-top: -10px;
+}
+
+.about-me-section  .highlights-text{
+     font-weight: 400;
+     font-size: 1.3rem;
+     opacity: 0.8;
+     text-align: justify;
+}
+.highlights-list{
+     font-size: 1.2rem;
+     opacity: 0.7;
+}
+.another-hightlights{
+     font-family: "Ubuntu";
+     font-weight: 400;
+     font-size: 1rem;
+     opacity: 0.8;  
+     text-align: justify;
+     margin-bottom: 5px;
+}
+
+.anoter-hightlights-list{
+     font-size: 1rem;
+     opacity: 0.5;  
+     
+}

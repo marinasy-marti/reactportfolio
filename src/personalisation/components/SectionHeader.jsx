@@ -1,10 +1,12 @@
 import '../styles/SectionHeader.css'
 
 
-const  SectionHeader = (props) =>{
 
+const  SectionHeader = ({info:{title,}}) =>{
 
-    return ("");
+    return (
+        <h2>{title}</h2>
+    );
 }
 
 

@@ -20,7 +20,7 @@
     clip-path: polygon(100% 0, 100% 71%, 50% 100%, 0 71%, 0 0);
 }
 .herosection nav{
-  width: 85%;
+  width: 95%;
 }
 
 .nav-items{
@@ -45,7 +45,7 @@
   padding: 70px;
 }
 
-.about-me-section{
+.about-me-info{
   padding:50px;
   text-align: center;
 }

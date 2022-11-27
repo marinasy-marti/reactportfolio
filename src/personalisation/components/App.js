@@ -20,7 +20,7 @@ function App() {
         </nav>
         <div className='second-herosection row justify-content-center'>
             <div className='col-lg-5 col-md-6 col-sm-12 a'>
-               <div className='d-flex flex-column justify-content-center about-me-section'>
+               <div className='d-flex flex-column justify-content-center about-me-info'>
                 <span className='about-me-text'>
                     Hello, I'm <span className='about-me-name'>Marinasy Behamby</span> 
                 </span>
@@ -41,9 +41,7 @@ function App() {
         </div>
       </header>
     <main>
-      <section>
-          <Aboutme />
-      </section>
+        <Aboutme />
     </main>
     </div>
   );
