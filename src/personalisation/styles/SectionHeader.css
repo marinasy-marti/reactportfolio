@@ -10,3 +10,12 @@ h2{
     text-align: center;
 }
 
+.desc
+{
+    font-size: 1rem; 
+    font-weight: 300;
+    font-family: "Ubuntu";
+    opacity: 0.8;
+    text-transform: capitalize;
+    text-align: center;
+}

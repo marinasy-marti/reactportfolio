@@ -2,10 +2,13 @@ import '../styles/SectionHeader.css'
 
 
 
-const  SectionHeader = ({info:{title,}}) =>{
+const  SectionHeader = ({info:{title,desc}}) =>{
 
     return (
-        <h2>{title}</h2>
+        <div>
+            <h2>{title}</h2>
+            <p className='desc'>{desc}</p>
+        </div>
     );
 }
 
