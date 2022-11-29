@@ -3,6 +3,7 @@ import '../styles/App.css';
 import bitmoji from '../assets/bitmojime.jpg'
 /*Component*/
 import Aboutme  from '../components/Aboutme.jsx';
+import Resume from '../components/Resume.jsx'
 
 function App() {
   return (
@@ -41,7 +42,13 @@ function App() {
         </div>
       </header>
     <main>
-        <Aboutme />
+        <section>
+          <Aboutme />
+        </section> 
+        
+        <section>
+            <Resume /> 
+        </section>
     </main>
     </div>
   );
