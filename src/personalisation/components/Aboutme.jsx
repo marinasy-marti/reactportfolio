@@ -4,6 +4,7 @@ import "@lottiefiles/lottie-player";
 
 const title = {
     title: "About me",
+    desc: "Why choose me? "
 }
 
 const Aboutme = () =>{
@@ -12,7 +13,6 @@ const Aboutme = () =>{
         <section className='about-me-section about-me-inside my-5'>
             <div className='d-flex flex-column'>
                 <SectionHeader info={title}/>
-                <span class="why">Why choose me?</span>
             </div>
             <div className='row justify-content-center shadow-lg my-5'>
                 <div className='col-lg-6 col-md-6 col-sm-12 d-flex align-items-center justify-content-center'>
