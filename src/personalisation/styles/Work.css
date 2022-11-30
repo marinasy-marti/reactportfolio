@@ -1,0 +1,18 @@
+.work-inside-new{
+    color:  rgb(94, 93, 93);
+    margin-block: 10px;
+}
+
+.company-name{
+    font-size: 1.3rem;  
+}
+.time-passed-out{
+    font-family: monospace;
+    font-size: 0.8rem;
+    text-decoration: underline;
+    color: rgb(65, 199, 243);
+    border-radius: 20px;
+    text-align: center;
+
+
+}
