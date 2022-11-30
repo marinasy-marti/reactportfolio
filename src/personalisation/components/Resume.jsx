@@ -32,12 +32,16 @@ const Resume = () =>
     const [projects, setProjects] = useState(false);
 
 
-    const setAllFasle = () => {
-       setEducation(false);        
+    const setAllFalse = () => {
+        setEducation(false);        
         setWork(false);        
         setProjects(false);        
-        setSkills(false);        
-        (false);        
+        setSkills(false);             
+    }
+
+    const changeState = (function1, state1) => {
+        setAllFalse();
+        function1(state1);
     }
     return <>
         <div className='resume-outer-section d-flex flex-column'>
@@ -54,10 +58,10 @@ const Resume = () =>
                         <span className='icons-span'>{projectsListIcon}</span>
                     </div>
                     <div className='d-flex flex-column'>
-                        <span className='resume-option-items'>Education</span>
-                        <span className='resume-option-items'>Work</span>
-                        <span className='resume-option-items'>Skills</span>
-                        <span className='resume-option-items'>Projects</span>
+                        <span className='resume-option-items' onClick={ () => { changeState(setEducation,true); }}>Education</span>                        
+                        <span className='resume-option-items' onClick={ () => { changeState(setWork,true); }}>Work</span>
+                        <span className='resume-option-items' onClick={ () => { changeState(setSkills,true); }}>Skills</span>
+                        <span className='resume-option-items' onClick={ () => { changeState(setProjects,true); }}>Projects</span>
                     </div>
                 </div>
                 <div className='col-lg-8 col-md-8 resume-right-section'>
