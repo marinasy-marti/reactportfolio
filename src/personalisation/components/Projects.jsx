@@ -2,12 +2,8 @@ import '../styles/Projects.css'
 
 const Projects = () => {
 
-    return <>
-        <div>
-            
-        </div>
-    </>
+    return <>Projects</>
 }
 
 
-export default Projects; 
+export default Projects;    

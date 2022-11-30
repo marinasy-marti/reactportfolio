@@ -2,11 +2,7 @@ import '../styles/Work.css'
 
 const Work = () => {
 
-    return <>
-        <div>
-            
-        </div>
-    </>
+    return <>work</>
 }
 
 

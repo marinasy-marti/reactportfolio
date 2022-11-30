@@ -2,11 +2,7 @@ import '../styles/Skills.css'
 
 const Skills = () => {
 
-    return <>
-        <div>
-            
-        </div>
-    </>
+    return <>Skills</>
 }
 
 

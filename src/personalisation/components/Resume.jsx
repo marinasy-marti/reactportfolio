@@ -51,17 +51,17 @@ const Resume = () =>
                 <div className='col-lg-4 col-md-4 col-sm-12 resume-left-section d-flex flex-row px-0 shadow-lg' 
                 
                 >
-                    <div className='d-flex flex-column bg-new text-dark'>
+                    <div className='d-flex flex-column bg-new text-white'>
                         <span className='icons-span'>{userGraduateIcon}</span>
                         <span className='icons-span'>{workIcon}</span>
                         <span className='icons-span'>{codeIcon}</span>
                         <span className='icons-span'>{projectsListIcon}</span>
                     </div>
                     <div className='d-flex flex-column'>
-                        <span className='resume-option-items' onClick={ () => { changeState(setEducation,true); }}>Education</span>                        
-                        <span className='resume-option-items' onClick={ () => { changeState(setWork,true); }}>Work</span>
-                        <span className='resume-option-items' onClick={ () => { changeState(setSkills,true); }}>Skills</span>
-                        <span className='resume-option-items' onClick={ () => { changeState(setProjects,true); }}>Projects</span>
+                        <span className={ education === false ? 'resume-option-items' : 'selected resume-option-items'} onClick={ () => { changeState(setEducation,true); }}>Education</span>                        
+                        <span className={ work === false ? 'resume-option-items' : 'selected resume-option-items'} onClick={ () => { changeState(setWork,true); }}>Work</span>
+                        <span className={ skills === false ? 'resume-option-items' : 'selected resume-option-items'} onClick={ () => { changeState(setSkills,true); }}>Skills</span>
+                        <span className={ projects === false ? 'resume-option-items' : 'selected resume-option-items'} onClick={ () => { changeState(setProjects,true); }}>Projects</span>
                     </div>
                 </div>
                 <div className='col-lg-8 col-md-8 resume-right-section'>
