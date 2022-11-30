@@ -1,12 +1,3 @@
-.about-me-section .why{
-     font-size: 1rem; 
-     font-weight: 300;
-     font-family: "Ubuntu";
-     opacity: 0.8;
-     text-transform: capitalize;
-     text-align: center;
-}
-
 .about-me-inside{
      width: 70%;
      margin-inline:auto;
@@ -15,6 +6,8 @@
 
 .text-about-me-container .pa {
      font-size: 1.4rem;
+     text-align: justify;
+     padding: 10px;
 }
 .highlights{
      font-family: "Ubuntu";
