@@ -6,7 +6,7 @@ import Aboutme  from '../components/Aboutme.jsx';
 import Resume from '../components/Resume.jsx'
 
 function App() {
-  return (
+  return <>
     <div className="App">
       <header className="App-header herosection px-10 py-5">
         <nav className='d-flex flex-row justify-content-between'>
@@ -51,7 +51,7 @@ function App() {
         </section>
     </main>
     </div>
-  );
+  </>;
 }
 
 export default App;
