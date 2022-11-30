@@ -1,0 +1,26 @@
+@import url('./App.css');
+
+.university-name{
+    font-family: "Ubuntu";
+    font-size: 1.4rem;
+    font-weight: 800;
+    color: hsl(49, 100%, 59%);
+}
+
+.university-degree{
+    font-size: 1rem;
+    font-weight: 600;
+    font-family: "Ubuntu";
+    color: rgb(94, 93, 93);
+    text-transform: uppercase;
+}
+
+.year{
+    font-family: monospace;
+    font-size: 1rem;
+    background-color: rgb(65, 199, 243);
+    color: white;
+    padding: 10px 10px;
+    border-radius: 20px;
+    text-align: center;
+}
