@@ -32,7 +32,7 @@ const Education = () => {
             <div className='education-one my-4  justify-content-between d-flex flex-row'>
                 <div className='d-flex flex-column new-one'>
                     <span className='university-name'>Faculty of Sciences of the University of Antananarivo </span>
-                    <span className='university-degree'>Grade: M2 Engineering in Computer Electronic Systems</span>
+                    <span className='university-degree'>Grade: M2 Computer Electronic Systems Engineering</span>
                 </div>
 
                 <div>
