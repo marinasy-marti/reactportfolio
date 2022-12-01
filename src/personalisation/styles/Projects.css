@@ -1,0 +1,10 @@
+@import url(./Education.css);
+
+
+.poc{
+    color: grey; 
+}
+
+.poc:hover{
+    color: rgb(65, 199, 243);
+}
