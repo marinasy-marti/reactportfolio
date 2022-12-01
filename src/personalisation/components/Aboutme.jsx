@@ -37,8 +37,8 @@ const Aboutme = () =>{
                                 <li>Databases: MySQL, MongoDB</li>
                                 <li>Cross plateform Mobile development with React native</li>
                                 <li>Desktop development with C,C++, Java, Python and NodeJS.</li>
-                                <li>Git/GitLab/GitHub</li>
-                                <li>Docker/Docker Swarm</li>
+                                <li>Versioning: Git</li>
+                                <li>Container: Docker</li>
                                 <li>Agile Software Development</li>
                                 <li>Linux admnistration</li>
                             </ul>
