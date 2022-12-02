@@ -4,16 +4,16 @@ const Skills = () => {
 
     const value_dev = [
         {
-            text:"Front End: React JS, Vue JS",
+            text:"Full Stack MERN",
             percentage: 50,
+        },
+        {
+            text:"Full Stack MEVN",
+            percentage:20.
         },
         {
             text:"Bootstrap 4, 5",
             percentage:40,
-        },
-        {
-            text:"Redux, VueX",
-            percentage:30.
         },
         {
             text:"Backend: Flask, Node JS, C++",
@@ -32,6 +32,10 @@ const Skills = () => {
             text:"C and C++",
             percentage:80,
         },
+        {
+            text:"Python",
+            percentage:60,
+        },
        
         {
             text:"React Native",
@@ -40,6 +44,14 @@ const Skills = () => {
         {
             text:"Versioning: Git",
             percentage:60,
+        },
+        {
+            text:"Agile Software Develpment",
+            percentage:20,
+        },
+        {
+            text:"Domain Drivern Design",
+            percentage:40,
         },
     ]
 
@@ -81,6 +93,7 @@ const Skills = () => {
             percentage:50,
         },
         
+        
     ]
 
     const value_other = [
@@ -99,7 +112,16 @@ const Skills = () => {
         {
             text:"Robotics",
             percentage:60,
-        },        
+        },   
+        
+        {
+            text:"Communication",
+            percentage:60,
+        },   
+        {
+            text:"Researching ",
+            percentage:90,
+        },  
     ]
     return <>
         <div className='skills-container'>
