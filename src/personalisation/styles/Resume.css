@@ -17,6 +17,12 @@
     color: white; 
 }
 
+.selected{
+    width: 100%;
+    background: linear-gradient(-45deg, var(--primary-app-color),var(--secondary-app-color));
+    color: white; 
+}
+
 .icons-span{
     padding-block:24px;
    padding-inline: 24px;
