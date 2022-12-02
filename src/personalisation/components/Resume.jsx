@@ -8,6 +8,7 @@ import Skills  from './Skills';
 import Projects from './Projects';
 import Education from './Education';
 import Work from './Work';
+import Languages from './Language';
 
 
 
@@ -64,7 +65,6 @@ const Resume = () =>
                     <div className='d-flex flex-column'>
                         <span className={ education === false ? 'resume-option-items' : 'selected resume-option-items'} onClick={ () => { changeState(setEducation,true); }}>Education</span>                        
                         <span className={ work === false ? 'resume-option-items' : 'selected resume-option-items'} onClick={ () => { changeState(setWork,true); }}>Work</span>
-                        <span className={ skills === false ? 'resume-languagestems' : 'selected resume-option-items'} onClick={ () => { changeState(setSkills,true); }}>Skills</span>
                         <span className={ skills === false ? 'resume-option-items' : 'selected resume-option-items'} onClick={ () => { changeState(setSkills,true); }}>Skills</span>
                         <span className={ projects === false ? 'resume-option-items' : 'selected resume-option-items'} onClick={ () => { changeState(setProjects,true); }}>Projects</span>
                         <span className={ languages === false ? 'resume-option-items' : 'selected resume-option-items'} onClick={ () => { changeState(setLanguages,true); }}>Languages</span>
@@ -75,6 +75,7 @@ const Resume = () =>
                     { work === true && <Work /> }
                     { skills === true  && <Skills /> }
                     { projects === true && <Projects /> }
+                    { projects === true && <Languages /> }
                 </div>
             </div>
         </div>
