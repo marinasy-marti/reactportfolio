@@ -4,6 +4,11 @@
   
 }
 
+lottie-player{
+     width:500px;
+     height: 500px;
+ }
+
 .text-about-me-container .pa {
      font-size: 1.4rem;
      text-align: justify;
@@ -38,4 +43,41 @@
      font-size: 1rem;
      opacity: 0.5;  
      
+}
+
+
+
+/***responsive ***/
+
+@media all and (max-width: 786px) {
+     .about-me-inside{
+          width: 100%;
+          margin-inline:auto;
+     }
+     lottie-player{
+          width:300px;
+          height: 300px;
+      }
+
+     .text-about-me-container .pa {
+          font-size: 1.1rem;
+          padding: 20px;
+     }
+
+     .pa{
+          margin: 0;
+     }
+     .highlights{
+          padding-block: 10px;
+          margin-top: -10px;
+          padding-inline: 20px;
+     }
+
+     .about-me-section  .highlights-text{
+          font-size: 1.1rem;
+     }
+     .highlights-list{
+          font-size: 1rem;
+          opacity: 0.7;
+     }     
 }

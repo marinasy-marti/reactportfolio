@@ -50,8 +50,7 @@ const Resume = () =>
     return <>
         <div className='resume-outer-section d-flex flex-column'>
             <span><Header info={title}/></span>
-            <div className='resume-new-section row'
-            style={{width:"70%",height:"450px", marginInline:"auto"}}>
+            <div className='resume-new-section row'>
                 <div className='col-lg-4 col-md-4 col-sm-12 resume-left-section d-flex flex-row px-0 shadow-lg' 
                 
                 >

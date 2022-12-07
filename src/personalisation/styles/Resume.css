@@ -43,4 +43,55 @@
     background: white; 
     box-shadow: 10px 10px 30px 2px #055baa;
     margin-top: 30px;
+    margin-inline: auto;
+    width:"70%";
+    height:"450px";
+}
+
+@media all and (max-width: 786px){
+
+.resume-option-items{
+    width: 1%;
+    padding-block:24px;
+    padding-inline: 24px;
+    color: black ;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    border-top-right-radius: 20px; 
+    border-bottom-right-radius: 20px;
+ }
+ 
+ .resume-option-items:hover{
+     width: 100%;
+     background: linear-gradient(-45deg, var(--primary-app-color),var(--secondary-app-color));
+     color: white; 
+ }
+ 
+ .selected{
+     width: 100%;
+     background: linear-gradient(-45deg, var(--primary-app-color),var(--secondary-app-color));
+     color: white; 
+ }
+ 
+ .icons-span{
+     padding-block:24px;
+    padding-inline: 24px;
+ }
+ 
+ .bg-new{
+     background: linear-gradient(-45deg, var(--primary-app-color),var(--secondary-app-color));
+ }   
+ 
+ .resume-outer-section{
+     padding-block: 100px;
+     background:var(--primary-app-color);
+     color: white; 
+     clip-path: polygon(0 14%, 100% 0, 100% 100%, 0% 100%);
+ }
+ 
+ .resume-new-section{
+     background: white; 
+     box-shadow: 10px 10px 30px 2px #055baa;
+     margin-top: 30px;
+ }
 }

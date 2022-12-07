@@ -20,7 +20,6 @@ const Aboutme = () =>{
                         src="https://assets7.lottiefiles.com/packages/lf20_3ntisyac.json"
                         background="transparent" 
                         speed="1"  
-                        style={{width:"500px",height:"500px"}}
                         loop autoplay
                     ></lottie-player>
                 </div>
@@ -28,7 +27,7 @@ const Aboutme = () =>{
                 <div className='col-lg-6 col-md-6 col-sm-12 py-5 d-flex flex-column'>
                     <div className='text-about-me-container  v'>
                    <p className='pa'> I am a Software Engineer, I have a strong professionalism and a strong willing to improve my skills and my personality as human being and my 
-                        relationship with other. I am flexible with technology changing and I always do a clean work.</p><br />
+                        relationship with other. I am flexible with technology changing and I always do a clean work.</p>
                         <div className='highlights'>
                             <span className='highlights-text'> Here are a few highlights</span>
                             <ul className='highlights-list'>

@@ -13,6 +13,23 @@
     color: rgb(65, 199, 243);
     border-radius: 20px;
     text-align: center;
+}
 
-
+@media all and (max-width: 786px){
+    .work-inside-new{
+        font-size: 0.8rem;
+        font-weight: 600;
+    }
+    
+    .company-name{
+        font-size: 1rem;
+    }
+    .time-passed-out{
+        font-family: monospace;
+        font-size: 0.8rem;
+        text-decoration: underline;
+        color: rgb(65, 199, 243);
+        border-radius: 20px;
+        text-align: center;
+    }
 }

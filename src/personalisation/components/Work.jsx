@@ -4,7 +4,7 @@ const Work = () => {
 
     return <>
         <div className='work-inside-new'>
-            <div className='d-flex flex-row  justify-content-between '>
+            <div className='d-flex flex-row  justify-content-between ed'>
                 <span className='company-name'>Ministère de l’Enseignement Supérieur et de la Recherche Scientifique</span>
                 <span className='time-passed-out'>June 2021 - Dec 2021</span>
             </div>

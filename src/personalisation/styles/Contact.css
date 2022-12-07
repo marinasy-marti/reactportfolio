@@ -1,0 +1,99 @@
+    .contact-me-card {
+        position:relative;
+        left:auto;
+        margin-inline: auto;
+        background:var(--primary-app-color);    
+        width: 80%;
+        height: auto;
+        box-shadow: 1px 1px 60px  1px rgb(243, 240,240);
+        border-radius: 40px;
+    }
+
+    .get-in-touch{
+        font-family: "Ubuntu";
+        font-weight: 700;
+        font-size: 1.4rem;
+    }
+
+    .input-group textarea{
+        height:70px;
+        color: rgba(94, 93, 93, 0.856);
+    }
+
+    .input-group button{
+        background: #ffdc3f;
+    }
+    .input-group button:hover{
+        background: #a09a7c;
+    }
+    .input-groups{
+        border: none;
+        outline: 1px solid blue;
+        border-radius: 10px;
+        padding:10x 10px;
+        margin-block: 20px;
+        height: 30px;
+        padding: 10px;
+        color: rgba(94, 93, 93, 0.856);
+    }
+
+    .card-contact-right{
+        background:var(--primary-app-color);;
+        box-shadow: 1px 1px 33px 1px rgb(4, 4, 177);
+        border-radius: 20px;
+        width: 100%;
+        height: 500px;
+        margin-inline:auto;
+        padding:20px;
+    }
+
+    @media all and (max-width: 786px) {
+        .lottie-container{
+            display: none;
+        }
+        .contact-me-card {  
+            width: 100%;
+            height: auto;
+            box-shadow: 1px 1px 60px  1px rgb(243, 240,240);
+            border-radius: 40px;
+            margin-inline: 5px;
+        }
+    
+        .get-in-touch{
+            font-family: "Ubuntu";
+            font-weight: 700;
+            font-size: 1.4rem;
+        }
+    
+        .input-group textarea{
+            height:70px;
+            color: rgba(94, 93, 93, 0.856);
+        }
+    
+        .input-group button{
+            background: #ffdc3f;
+        }
+        .input-group button:hover{
+            background: #a09a7c;
+        }
+        .input-groups{
+            border: none;
+            outline: 1px solid blue;
+            border-radius: 10px;
+            padding:10x 10px;
+            margin-block: 20px;
+            height: 30px;
+            padding: 10px;
+            color: rgba(94, 93, 93, 0.856);
+        }
+    
+        .card-contact-right{
+            background:var(--primary-app-color);;
+            box-shadow: none;
+            border-radius: 30px;
+            width: 100%;
+            height: 500px;
+            margin-inline:auto;
+            padding:20px;
+        }         
+   }

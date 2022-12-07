@@ -19,3 +19,18 @@ h2{
     text-transform: capitalize;
     text-align: center;
 }
+
+@media all and (max-width: 786px) {
+    h2{
+        font-weight:200;
+        font-size: 2rem;
+        text-decoration-thickness: 3px;
+        letter-spacing: 1.5px;
+    }
+    
+    .desc
+    {
+        font-size: 1rem; 
+    }
+
+}

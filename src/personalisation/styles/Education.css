@@ -24,3 +24,24 @@
     border-radius: 20px;
     text-align: center;
 }
+
+@media all and (max-width: 786px){
+    .university-name{
+        font-size: 1rem;
+    }
+    
+    .university-degree{
+        font-size: 0.8rem;
+        font-weight: 600;
+    }
+    
+    .year{
+
+        border-left:1px solid  rgb(65, 199, 243);
+        background:white;
+        color: rgb(94, 93, 93);
+        padding: 10px 10px;
+        border-radius: 0;
+        text-align: center;
+    }
+}
