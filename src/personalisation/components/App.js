@@ -1,12 +1,15 @@
 
 import '../styles/App.css';
 import bitmoji from '../assets/bitmojime.jpg'
+import cv from '../../files/cv_marinasy.behamby_fs.pdf'
 /*Component*/
 import Aboutme  from '../components/Aboutme.jsx';
 import Resume from '../components/Resume.jsx'
 import Contact from '../components/Contact.jsx'
 import SectionHeader  from '../components/SectionHeader.jsx'
 import {useState} from 'react'
+
+
 
 
 function App() {
@@ -16,7 +19,11 @@ function App() {
     desc: '', 
   };
 
-  const [openNav, setOpenNav] = useState(false);   
+  const [openNav, setOpenNav] = useState(false);
+
+  const refreshPage = () => {
+    window.location.reload(false);
+  }
 
   return <>
     <div className="App">
@@ -39,7 +46,7 @@ function App() {
             <div className='d-flex flex-rows'>
               <a  href="#home"className='mx-4 nav-items' onClick={() => {setOpenNav(false)}} >Home</a>
               <a href="#aboutme"className='mx-4 nav-items' onClick={() => {setOpenNav(false)}} >About me</a>
-              <a href="#resume"className='mx-4 nav-items' onClick={() => {setOpenNav(false)}} >Resume</a> 
+              <a href="#resume"className='mx-4 nav-items' onClick={() => {setOpenNav(false)} } >Resume</a> 
               <a href="#contact"className='mx-4 nav-items' onClick={() => {setOpenNav(false)}} >Contact me</a>        
             </div>
         </nav>
@@ -57,7 +64,7 @@ function App() {
                    I build front-end and back-end applications   
                 </span>
                 <div className='d-flex flex-row justify-content-center mt-5'>
-                  <button className='get-resume'>Get Resume</button>
+                  <a href={cv} className='get-resume'>Get Resume</a>
                 </div>
                </div>
             </div> 

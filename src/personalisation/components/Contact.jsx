@@ -1,15 +1,46 @@
 import '../styles/Contact.css'
 import "@lottiefiles/lottie-player";
-import {useState} from 'react'
+import {useState, useRef} from 'react'
+import emailjs from '@emailjs/browser';
+
 
 
 
 const Contact = () => {
+    
+    
     const [name, setName] = useState("");
     const [email, setEmail] = useState("");
     const [message, setMessage] = useState("");
+    const [sendMailSatus, setSendMailStatus] = useState (false);
 
+    const form = useRef();
+    const sendEmail = (e) => {
+        const mailServiceId = "service_t57qprf";
+        const mailTemplateId = "template_iupxjzt";
+        const mailPublicKey = "JeJL8hXWwcLiNcsmL";
 
+        const templateParams ={
+            from_name:name,
+            from_email: email,
+            to_name:"Marinasy",
+            message:message,
+            reply_to: email,
+        }
+        
+        e.preventDefault();
+        emailjs.send(mailServiceId, mailTemplateId, templateParams, mailPublicKey)
+          .then((result) => {
+              console.log(result.text);
+              if(result.text === 'OK'){
+                setSendMailStatus(true);
+              }
+          }, (error) => {
+              console.log(error.text);
+          });
+
+          
+    };
     return <>
         <div className='contact-me row'>
             <div>
@@ -28,13 +59,14 @@ const Contact = () => {
                     </div>
                     <div className='col-lg-6 col-md-5 col-sm-12 my-auto'>
                         <div className='d-flex flex-column justify-content-center card-contact-right'>
-                            <form >
+                            <form ref={form}  onSubmit={sendEmail} >
                                 <div className='input-group my-3 d-flex flex-column'>
                                     <label htmlFor="name">Name</label>
                                     <input 
                                         value={name}
                                         onChange={(e) => {
-                                            setName(e.target.value)
+                                            setName(e.target.value);
+                                            setSendMailStatus(false);
                                         }}
                                         type="text"  
                                         id='name' 
@@ -47,7 +79,8 @@ const Contact = () => {
                                     <input 
                                         value={email}
                                         onChange={(e) => {
-                                            setEmail(e.target.value)
+                                            setEmail(e.target.value);
+                                            setSendMailStatus(false);
                                         }}
                                         type="email"  
                                         id='email' 
@@ -60,7 +93,9 @@ const Contact = () => {
                                     <textarea 
                                         value={message}
                                         onChange={(e) => {
-                                            setMessage(e.target.value)
+                                            setMessage(e.target.value);
+                                            setSendMailStatus(false);
+
                                         }}
                                         type="text"  
                                         id='message' 
@@ -69,7 +104,8 @@ const Contact = () => {
                                     ></textarea>
                                 </div>
                                 <div className='input-group my-3 d-flex flex-column'>
-                                    <button className='btn btn-success'>Send </button>
+                                    <input className={ sendMailSatus === false ? 'btn' : 'btn btn-success'} type={'submit'} 
+                                    value={ sendMailSatus === false ? 'Send Message' : 'Message Sent'} />
                                 </div>
                             </form>
                         </div>

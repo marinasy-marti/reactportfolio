@@ -8,22 +8,22 @@
         box-shadow: 1px 1px 60px  1px rgb(243, 240,240);
         border-radius: 40px;
     }
-
+        
     .get-in-touch{
         font-family: "Ubuntu";
         font-weight: 700;
         font-size: 1.4rem;
     }
-    
+
     .input-group textarea{
         height:70px;
         color: rgba(94, 93, 93, 0.856);
     }
 
-    .input-group button{
+    .input-group .btn{
         background: #ffdc3f;
     }
-    .input-group button:hover{
+    .input-group .btn:hover{
         background: #a09a7c;
     }
     .input-groups{
@@ -45,6 +45,10 @@
         height: 500px;
         margin-inline:auto;
         padding:20px;
+    }
+    .btn-success{
+        background: green !important;
+        pointer-events: none;
     }
 
     @media all and (max-width: 786px) {
