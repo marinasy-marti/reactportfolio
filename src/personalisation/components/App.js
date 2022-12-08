@@ -31,20 +31,19 @@ function App() {
       <nav 
           className=
             { 
-              !openNav ? 'd-flex flex-rows px-9 py-2 bg-nav navbar-new transition-all'
-                      :'d-flex flex-rows px-9 py-2 bg-nav navbar-fixed-new transition-all'
+              !openNav ? 'd-flex flex-rows px-9 py-2 bg-nav navbar-new transition-all nav-desk'
+                      :'d-flex flex-rows px-9 py-2 bg-nav navbar-fixed-new transition-all nav-desk'
             }
           >
             <span className='me'>Behamby Marinasy</span>
             <div className='d-flex flex-rows'>
-              <span className='mx-4 nav-items'>Home</span>
-              <span className='mx-4 nav-items'>About me</span>
-              <span className='mx-4 nav-items'>Resume</span> 
-              <span className='mx-4 nav-items'>Contact me</span>        
+              <a href="#home"className='mx-4 nav-items'>Home</a>
+              <a href="#aboutme"className='mx-4 nav-items'>About me</a>
+              <a href="#resume"className='mx-4 nav-items'>Resume</a> 
+              <a href="#contact"className='mx-4 nav-items'>Contact me</a>        
             </div>
         </nav>
-      <header className="App-header herosection px-10 py-5">
-        
+      <header className="App-header herosection px-10 py-5" id='home'>
         <div className='second-herosection row justify-content-center'>
             <div className='col-lg-5 col-md-6 col-sm-12 a'>
                <div className='d-flex flex-column justify-content-center about-me-info'>
@@ -68,13 +67,13 @@ function App() {
         </div>
       </header>
     <main>
-        <section>
+        <section id='aboutme'>
           <Aboutme />
         </section> 
-        <section>
+        <section id='resume'>
             <Resume /> 
         </section>
-        <section className='contact'>
+        <section className='contact' id='contact'>
           <div className='contact-me-part '>
             <div className='relative-bg'></div>
             <div className='contact-inner-part d-flex flex-column'>

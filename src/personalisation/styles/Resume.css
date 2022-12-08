@@ -90,8 +90,11 @@
  }
  
  .resume-new-section{
-     background: white; 
-     box-shadow: 10px 10px 30px 2px #055baa;
-     margin-top: 30px;
+    background: white; 
+    box-shadow: 10px 10px 30px 2px #055baa;
+    margin-top: 30px;
+    margin-inline: auto;
+    width:100%;
+    height:auto;
  }
 }

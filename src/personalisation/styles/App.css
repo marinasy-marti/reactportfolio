@@ -30,6 +30,12 @@
   width: 95%;
 }
 
+.nav-desk{
+  position:fixed;
+  width: 100%;
+  z-index: 50;
+}
+
 .nav-items{
   cursor: pointer; 
   color:var(--nav-color); 
@@ -157,6 +163,9 @@
   display: none;
 }
 
+a{
+  text-decoration: none;
+}
 /****mobile view***/
 
 @media all and (max-width: 786px) { 
