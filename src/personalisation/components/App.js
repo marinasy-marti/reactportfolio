@@ -37,10 +37,10 @@ function App() {
           >
             <span className='me'>Behamby Marinasy</span>
             <div className='d-flex flex-rows'>
-              <a href="#home"className='mx-4 nav-items'>Home</a>
-              <a href="#aboutme"className='mx-4 nav-items'>About me</a>
-              <a href="#resume"className='mx-4 nav-items'>Resume</a> 
-              <a href="#contact"className='mx-4 nav-items'>Contact me</a>        
+              <a  href="#home"className='mx-4 nav-items' onClick={() => {setOpenNav(false)}} >Home</a>
+              <a href="#aboutme"className='mx-4 nav-items' onClick={() => {setOpenNav(false)}} >About me</a>
+              <a href="#resume"className='mx-4 nav-items' onClick={() => {setOpenNav(false)}} >Resume</a> 
+              <a href="#contact"className='mx-4 nav-items' onClick={() => {setOpenNav(false)}} >Contact me</a>        
             </div>
         </nav>
       <header className="App-header herosection px-10 py-5" id='home'>
