@@ -51,9 +51,7 @@ const Resume = () =>
         <div className='resume-outer-section d-flex flex-column'>
             <span><Header info={title}/></span>
             <div className='resume-new-section row'>
-                <div className='col-lg-4 col-md-4 col-sm-12 resume-left-section d-flex flex-row px-0 shadow-lg' 
-                
-                >
+                <div className='col-lg-4 col-md-4 col-sm-12 resume-left-section d-flex flex-row px-0 shadow-lg'>
                     <div className='d-flex flex-column bg-new text-white'>
                         <span className='icons-span'>{userGraduateIcon}</span>
                         <span className='icons-span'>{workIcon}</span>

@@ -44,8 +44,10 @@
     box-shadow: 10px 10px 30px 2px #055baa;
     margin-top: 30px;
     margin-inline: auto;
-    width:"70%";
-    height:"450px";
+    width:70%;
+    height:450px;
+
+    border: 10px solid red;
 }
 
 @media all and (max-width: 786px){
