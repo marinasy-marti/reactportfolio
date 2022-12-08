@@ -77,7 +77,7 @@ function App() {
           <div className='contact-me-part '>
             <div className='relative-bg'></div>
             <div className='contact-inner-part d-flex flex-column'>
-                  <SectionHeader  info={contact} />  
+                  <span className='c_contact'><SectionHeader  info={contact} />  </span>
                   <Contact />
             </div>
           </div>

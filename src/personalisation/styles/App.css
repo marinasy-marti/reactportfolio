@@ -130,6 +130,14 @@
   border: 1px solid white;
 }
 
+section{
+  position: relative; 
+  top:60px;
+}
+.c_contact{
+  color: rgba(94, 93, 93, 0.856);
+}
+
 
 /*****contact******/ 
 .contact{
@@ -149,7 +157,7 @@
   z-index: -10; 
 }
 .contact-inner-part{
-  padding-block: 158px;
+  padding-block:50px;
 }
 .flex-rows {
   flex-direction:row;
